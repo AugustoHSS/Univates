@@ -38,19 +38,19 @@ def main():
     inicio = time.perf_counter()
 
     # Gera um array de x valores aleatórios entre x e y
-    rand_array = np.random.randint(0, 10000, size=100000)
+    rand_array = np.random.randint(0, 1000, size=100000)
 
     # Chama a função de ordenação
     bubble_sort(rand_array)
     # rand_array = quick_sort(rand_array)
     # print(rand_array)
 
+
     # Guarda o tempo final
     fim = time.perf_counter()
     # Calcula o tempo de execução
     tempo_execucao = fim - inicio
     print("Tempo de execução: ", tempo_execucao, "segundos")
-
-
+    print("ola puxao")
 if __name__ == '__main__':
     main()
